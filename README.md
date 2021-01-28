@@ -21,8 +21,19 @@ Portanto, o navegador que você usa é um cliente HTTP que envia solicitações 
 
 ## HTTPS
 ###### Hypertext Transfer Protocol Secury / Protocolo de Transferência de Hipertexto Seguro
-O HTTPS é uma extensão do HTTP. O “S” vem da palavra “secure” (“segurança” em inglês) e costuma ser oferecido pelo certificado SSL, 
-oferecidos pela maioria dos servidores. Ele oferece uma conexão criptografada entre o servidor e o navegador, de maneira que o usuário possa inserir informações 
+O HTTPS é uma extensão do HTTP. O “S” vem da palavra “secure” (“segurança” em inglês) e costuma ser oferecido pelo **certificado SSL**, 
+oferecidos pela maioria dos servidores. Ele oferece uma **conexão criptografada entre o servidor e o navegador**, de maneira que o usuário possa inserir informações 
 com mais segurança.
+
+
+## SSL
+##### Secure Sockets Layer / Camada Segura
+O SSL (Secure Sockets Layer) usa um sistema de criptografia que utiliza duas chaves para criptografar os dados, uma chave pública conhecida por todos e uma chave privada conhecida apenas pelo destinatário/servidor da aplicação.
+
+É o mesmo conceito de criptografia assimétrica do algoritmo RS256 utilizado no _Jason Web Token_ (JWT).
+
+Uma conexão SSL/TLS em funcionamento garante que os dados sejam enviados e recebidos do servidor correto, em vez de um “homem do meio” mal-intencionado. Isto é, ajuda a impedir que os agentes maliciosos falsifiquem um site.
+
+Outro benefício é a **integridade dos dados**. As conexões SSL/TLS garantem que não haja perda ou alteração de dados durante o transporte, incluindo um código de autenticação de mensagem (MAC). Isso garante que os dados enviados sejam recebidos sem alterações ou alterações maliciosas.
 
 
